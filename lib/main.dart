@@ -7,6 +7,8 @@ import 'demo/layout_demo.dart';
 import 'demo/view_demo.dart';
 import 'demo/sliver_demo.dart';
 import 'demo/navigation_demo.dart';
+import 'demo/form_demo.dart';
+import 'demo/material_components.dart';
 
 void main() => runApp(App());
 
@@ -17,15 +19,19 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 //      home: Home(),
 //      home: NavigationDemo(),
-      initialRoute: '/',
+      initialRoute: '/mdc',
       routes: {
         '/' : (context) => Home(),
         '/About': (context) => Page(title: 'About',),
+        '/Forms' : (context) => FormDemo(),
+        '/mdc' : (context) => MaterialComponetDemo(),
       },
       theme: ThemeData(
           primarySwatch: Colors.blue,
           highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
-          splashColor: Colors.white70),
+          splashColor: Colors.white70,
+          accentColor: Colors.yellow[400],
+      ),
     );
   }
 }
