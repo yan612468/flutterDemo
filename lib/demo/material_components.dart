@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter/demo/pop_menu_demo.dart';
+import 'package:learn_flutter/demo/form_demo.dart';
+import 'package:learn_flutter/demo/checkbox_demo.dart';
+import 'package:learn_flutter/demo/radio_demo.dart';
+import 'package:learn_flutter/demo/switch_demo.dart';
+import 'package:learn_flutter/demo/slider_demo.dart';
+import 'package:learn_flutter/demo/datetime_demo.dart';
 
 class MaterialComponetDemo extends StatelessWidget {
   @override
@@ -11,6 +17,30 @@ class MaterialComponetDemo extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
+          ListItem(
+            title: 'datetime',
+            page: DateTimeDemo(),
+          ),
+          ListItem(
+            title: 'slider',
+            page: SliderDemo(),
+          ),
+          ListItem(
+            title: 'switch',
+            page: SwitchDemo(),
+          ),
+          ListItem(
+            title: 'raido',
+            page: RadioDemo(),
+          ),
+          ListItem(
+            title: 'checkbox',
+            page: CheckBoxDemo(),
+          ),
+          ListItem(
+            title: 'Form',
+            page: FormDemo(),
+          ),
           ListItem(
             title: 'Button',
             page: ButtonDemo(),
